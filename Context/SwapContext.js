@@ -43,8 +43,8 @@ export const SwapTokenContextProvider = ({ children }) => {
 
   const addToken = [
     // "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-    "0x3CA5269B5c54d4C807Ca0dF7EeB2CB7a5327E77d",
-    "0x8a6E9a8E0bB561f8cdAb1619ECc4585aaF126D73", 
+    "0x8a6E9a8E0bB561f8cdAb1619ECc4585aaF126D73",
+    "0xf09e7Af8b380cD01BD0d009F83a6b668A47742ec", 
   ];
 
   //FETCH DATA
