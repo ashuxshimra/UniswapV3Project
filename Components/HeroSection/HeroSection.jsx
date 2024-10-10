@@ -105,7 +105,7 @@ const HeroSection = ({}) => {
               alt="ether"
             />
             {tokenOne.symbol || "ETH"}
-            <small>{ether.slice(0, 7)}</small>
+            <small>{tokenOne.tokenBalance.slice(0, 7)}</small>
           </button>
         </div>
 
@@ -131,7 +131,7 @@ const HeroSection = ({}) => {
               alt="ether"
             />
             {tokenTwo.symbol || "ETH"}
-            <small>{dai.slice(0, 7)}</small>
+            <small>{tokenTwo.tokenBalance.slice(0, 7)}</small>
           </button>
         </div>
 
@@ -146,11 +146,11 @@ const HeroSection = ({}) => {
             className={Style.HeroSection_box_btn}
             onClick={() =>
               singleSwapToken(
-                // {
-                // token1: tokenOne,
-                // token2: tokenTwo,
-                // swapAmount,
-              // }
+                {
+                token1: tokenOne,
+                token2: tokenTwo,
+                swapAmount,
+              }
             )
             }
           >
