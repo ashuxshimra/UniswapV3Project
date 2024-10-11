@@ -18,16 +18,16 @@ async function main() {
   };
 
   // BooToken
-//   const BooToken = await hre.ethers.getContractFactory("BooToken");
-//   const booToken = await BooToken.deploy(deployOptions);
-//   await booToken.deployed();
-//   console.log(`BooToken deployed to ${booToken.address}`);
+  const BooToken = await hre.ethers.getContractFactory("BooToken");
+  const booToken = await BooToken.deploy(deployOptions);
+  await booToken.deployed();
+  console.log(`BooToken deployed to ${booToken.address}`);
 
   // LifeToken
-//   const LifeToken = await hre.ethers.getContractFactory("LifeToken");
-//   const lifeToken = await LifeToken.deploy(deployOptions);
-//   await lifeToken.deployed();
-//   console.log(`LifeToken deployed to ${lifeToken.address}`);
+  const LifeToken = await hre.ethers.getContractFactory("LifeToken");
+  const lifeToken = await LifeToken.deploy(deployOptions);
+  await lifeToken.deployed();
+  console.log(`LifeToken deployed to ${lifeToken.address}`);
 
   // SingleSwapToken
   const SingleSwapToken = await hre.ethers.getContractFactory("SingleSwapToken");
@@ -35,11 +35,11 @@ async function main() {
   await singleSwapToken.deployed();
   console.log(`SingleSwapToken deployed to ${singleSwapToken.address}`);
 
-  // SwapMultiHop
-//   const SwapMultiHop = await hre.ethers.getContractFactory("SwapMultiHop");
-//   const swapMultiHop = await SwapMultiHop.deploy(deployOptions);
-//   await swapMultiHop.deployed();
-//   console.log(`swapMultiHop deployed to ${swapMultiHop.address}`);
+//   SwapMultiHop
+  const SwapMultiHop = await hre.ethers.getContractFactory("SwapMultiHop");
+  const swapMultiHop = await SwapMultiHop.deploy(deployOptions);
+  await swapMultiHop.deployed();
+  console.log(`swapMultiHop deployed to ${swapMultiHop.address}`);
 }
 
 main()
